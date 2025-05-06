@@ -1,466 +1,265 @@
-<!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!DOCTYPE html>
 
-  <title>Chao Huang's Homepage</title>
-  
-  <meta name="author" content="Chao Huang">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<link rel="icon" href="images/website_icon.png">
-</head>
-
-<body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr>
-      <td halign="center">
-          <p align="center">
-              <font size="6">Chao Huang</font>
-          </p>
-      </td>
-    </tr>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
-              <!-- <p style="text-align:center">
-                <name>Chao Huang</name>
-              </p> -->
-              <p>
-                I am a fifth-year PhD candidate in the Department of Computer Science at the University of Rochester, advised by <a href="https://www.cs.rochester.edu/~cxu22/">Prof. Chenliang Xu</a>. Previously, I spent one wonderful year as a research assistant at the Chinese University of Hong Kong, working with <a href="http://www.cse.cuhk.edu.hk/~cwfu/">Prof. Chi-Wing Fu</a> on 3D vision. I received my B.Eng. from ESE Department, Nanjing University in 2019. In my undergrad, I worked with <a href="https://scholar.google.com.sg/citations?hl=en&user=78KxtRMAAAAJ">Prof. Zhan Ma</a> on image compression.
-                <br>
-                <br>
-                I am broadly interested in developing machine learning models to understand how human perceive the surrounding scenes from multi-modal inputs and utilize the perception for action. Specifically, I am working on multimodal video understanding and generation.
-              </p>
-              <p><b>Research opportunities:</b> I am open to collaborating on research projects. Shoot me an email if you are insterested. 
-              
-                <p style="color: red;">✉️I'm currently seeking full-time opportunities or internship with return opportunities. Please feel free to reach out if you have any openings!</p> 
-
-
-              <!-- Recently I am looking for collaborators on the following topics:
-                <ul>
-                  <li>Audio-Visual Scene Understanding</li>
-                  <li>Language-Guided Vision and Audio</li>
-                  <li>Acoustic Scene Understanding</li>
-                  <li>3D Vision and Graphics</li>
-                </ul> -->
-              </p>
-
-              <p style="text-align:center">
-                <a href="mailto:chuang65@cs.rochester.edu">Email</a> &nbsp/&nbsp
-                <a href="data/Chao_Huang_s_CV.pdf">CV</a> &nbsp/&nbsp
-                <!-- <a href="data/JonBarron-bio.txt">Bio</a> &nbsp/&nbsp -->
-                <a href="https://scholar.google.com/citations?user=5yYP5RIAAAAJ&hl=en">Google Scholar</a> 
-                <!-- <a href="https://twitter.com/jon_barron">Twitter</a> &nbsp/&nbsp -->
-                <!-- <a href="https://github.com/jonbarron/">Github</a> -->
-              </p>
-            </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
-              <a href="images/avatar.png"><img style="width:100%;max-width:100%" alt="profile photo" src="images/avatar.png" class="hoverZoomLink"></a>
-            </td>
-          </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-          <td style="padding:20px;width:100%;vertical-align:middle">
-            <heading>News</heading>
-          </td>
-        </tr>
-      </tbody></table>
-      <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            
-      </tbody></table> -->
-      <!-- <ul>
-        <li><strong>[March 2023]</strong> I will be joining Meta Reality Labs Research Pitt this summer for internship! </li>
-        <li><strong>[March 2023]</strong> I will be joining Meta Reality Labs Research Pitt this summer for internship! </li>
-      </ul> -->
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>T2FM Workshop @ ICCV 2025</title>
+<meta content="T2FM Workshop - Trustworthy Foundation Models" name="description"/>
+<link href="favicon.svg" rel="icon"/>
+<!-- Bulma CSS for layout -->
+<link href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" rel="stylesheet"/>
+<!-- Font Awesome for icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+<!-- Custom CSS -->
+<style>
+    body { background-color: #f8f8f8; }
+    .hero {
+      position: relative;
+      background: url('data/teaser.png') center/cover no-repeat;
+      color: #222;
+      padding: 5rem 1.5rem;
+      background-attachment: fixed;
+    }
+    .hero::before {
+        content: "";
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: rgba(255, 255, 255, 0.4); 
+        z-index: 0;
+      }
       
-      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-        <!-- <colgroup>
-            <col width="15%">
-            <col width="80%">
-        </colgroup> -->
-        <tbody>
-          <tr>
-            <td valign="top" align="center" style="width: 15%;"><strong>[02/2025]</strong></td>
-            <td style="width: 75%;">Two papers accepted to <a href="https://cvpr.thecvf.com/">CVPR 2025</a>!
-            </td>
-          </tr>
-          <tr> 
-            <td valign="top" align="center" style="width: 15%;"><strong>[12/2024]</strong></td>
-            <td style="width: 75%;"> 🏆 DAVIS won the <font color="#ff6a5c"><strong>ACCV 2024 Best Paper Award, Honorable Mention!</strong></font>
-            </td>
-          </tr>
-          <tr>
-            <td valign="top" align="center" style="width: 15%;"><strong>[09/2024]</strong></td>
-            <td style="width: 75%;">Two papers accepted to <a href="https://accv2024.org/">ACCV 2024</a> with DAVIS as <font color="#ff6a5c"><strong>Oral</strong></font> presentation.
-            </td>
-          </tr>
-          <tr>
-            <td valign="top" align="center" style="width: 15%;"><strong>[07/2024]</strong></td>
-            <td style="width: 75%;">Acoustic Primitives is accepted to <a href="https://eccv2024.ecva.net/">ECCV 2024</a>! See you in Milan &#9962.
-            </td>
-          </tr>
-          <tr>
-            <td valign="top" align="center" style="width: 15%;"><strong>[05/2024]</strong></td>
-            <td style="width: 75%;">I have rejoined <a href="https://about.meta.com/realitylabs/">Meta Reality Labs</a> as a summer research intern, this time based in the UK.
-            </td>
-          </tr>
-          <tr>
-            <td valign="top" align="center" style="width: 15%;"><strong>[09/2023]</strong></td>
-            <td style="width: 75%;">One paper accepted to <a href="https://nips.cc/">NeurIPS 2023</a>!
-            </td>
-          </tr>
-          <tr>
-            <td valign="top" align="center" style="width: 15%;"><strong>[06/2023]</strong></td>
-            <td style="width: 75%;">Invited paper talk at <a href="https://sites.google.com/view/ego4d-epic-cvpr2023-workshop/">Joint International 3rd Ego4D and 11th EPIC Workshop
-            </a> @ CVPR 2023.
-            </td>
-          </tr>
-          <tr>
-            <td valign="top" align="center" style="width: 15%;"><strong>[03/2023]</strong></td>
-            <td style="width: 75%;">I will be joining <a href="https://about.meta.com/realitylabs/">Meta Reality Labs Pittsburgh</a> for summer internship!
-            </td>
-          </tr>
-          <tr>
-            <td valign="top" align="center" style="width: 15%;"><strong>[02/2023]</strong></td>
-            <td style="width: 75%;">One paper accepted to <a href="https://cvpr2023.thecvf.com/Conferences/2023">CVPR 2023</a>!
-            </td>
-          </tr>
-        </tbody>
-    </table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Research</heading>
-            </td>
-          </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/fresca.png" alt="diffusion" width="210" height="90">
-            </td>
-            <td width="75%" valign="middle">
-                <a href="/"><papertitle>FreSca: Unveiling the Scaling Space in Diffusion Models
-                </papertitle></a>
-              <br>
-              <strong>Chao Huang</strong>, <a href="https://liangsusan-git.github.io/">Susan Liang</a>, <a href="https://yunlong10.github.io/">Yunlong Tang</a>, <a href="https://limacv.github.io/homepage/">Li Ma</a>, <a href="http://www.yapengtian.com/">Yapeng Tian</a>, <a href="https://www.cs.rochester.edu/~cxu22/">Chenliang Xu</a>
-              <br>
-              <a href="https://arxiv.org/pdf/2504.02154">Paper</a> / 
-              <a href="https://wikichao.github.io/FreSca/">Project Page</a> / 
-              <a href="https://github.com/WikiChao/FreSca">Code</a>
-              <p>We propose a frequency-domain scaling method that provides a zero-shot performance boost to diffusion-based applications.</p>
-            </td>
-          </tr>
-
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/visah.png" alt="diffusion" width="210" height="90">
-            </td>
-            <td width="75%" valign="middle">
-                <a href="/"><papertitle>Learning to Highlight Audio by Watching Movies
-                </papertitle></a>
-              <br>
-              <strong>Chao Huang</strong>, <a href="https://ruohangao.github.io/">Ruohan Gao</a>,  J. M. F. Tsang, Jan Kurcius, Cagdas Bilen, <a href="https://www.cs.rochester.edu/~cxu22/">Chenliang Xu</a>, <a href="https://anuragkr90.github.io/">Anurag Kumar</a>, <a href="https://sanjeelparekh.github.io/">Sanjeel Parekh</a>
-              <br>
-              <em>CVPR, 2025</em>
-              <br>
-              <!-- <a href="">Paper</a> / 
-              <a href="">Project Page</a> / 
-              <a href="">Code</a> -->
-              <p>We learn from movies to transform audio to deliver appropriate highlighting effects guided by the accompanying video.</p>
-            </td>
-          </tr>
-
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/vidcomposition.png" alt="diffusion" width="210" height="120">
-            </td>
-            <td width="75%" valign="middle">
-                <a href="/"><papertitle>
-                  VidComposition: Can MLLMs Analyze Compositions in Compiled Videos?
-                </papertitle></a>
-              <br>
-              Yunlong Tang*, Junjia Guo*, Hang Hua, Susan Liang, Mingqian Feng, Xinyang Li, Rui Mao, <b>Chao Huang</b>, Jing Bi, Zeliang Zhang, and Pooyan Fazli, Chenliang Xu
-              <br>
-              <em>CVPR, 2025</em>
-              <br>
-              <a href="https://arxiv.org/abs/2411.10979">Paper</a> / 
-              <a href="https://yunlong10.github.io/VidComposition/">Project Page</a> / 
-              <a href="https://github.com/yunlong10/VidComposition">Code</a>
-              <p>We introduce VidComposition, a benchmark designed to assess MLLMs' understanding of video compositions</p>
-            </td>
-          </tr>
-
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/scalingconcept.png" alt="diffusion" width="210" height="120">
-            </td>
-            <td width="75%" valign="middle">
-                <a href="/"><papertitle>Scaling Concept with Text-Guided Diffusion Models
-                </papertitle></a>
-              <br>
-              <strong>Chao Huang</strong>, <a href="https://liangsusan-git.github.io/">Susan Liang</a>, <a href="https://yunlong10.github.io/">Yunlong Tang</a>, <a href="http://www.yapengtian.com/">Yapeng Tian</a>, <a href="https://anuragkr90.github.io/">Anurag Kumar</a>, <a href="https://www.cs.rochester.edu/~cxu22/">Chenliang Xu</a>
-              <br>
-              <em>arXiv preprint, 2024</em>
-              <br>
-              <a href="https://arxiv.org/pdf/2410.24151">Paper</a> / 
-              <a href="https://wikichao.github.io/ScalingConcept/">Project Page</a> / 
-              <a href="https://github.com/WikiChao/ScalingConcept">Code</a>
-              <p>We use pretrained text-guided diffusion models
-                to scale up/down concepts in image/audio.</p>
-            </td>
-          </tr>
-
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/davis.png" alt="davis" width="210" height="120">
-            </td>
-            <td width="75%" valign="middle">
-                <a href="https://arxiv.org/pdf/2308.00122.pdf"><papertitle>DAVIS: High-Quality Audio-Visual Separation with Generative Diffusion Models</papertitle></a>
-              <br>
-              <strong>Chao Huang</strong>, <a href="https://liangsusan-git.github.io/">Susan Liang</a>, <a href="http://www.yapengtian.com/">Yapeng Tian</a>, <a href="https://anuragkr90.github.io/">Anurag Kumar</a>, <a href="https://www.cs.rochester.edu/~cxu22/">Chenliang Xu</a>
-              <br>
-              <em>ACCV</em>, 2024  <font color="#ff6a5c"><strong>🏆 Best Paper Award, Honorable Mention</strong></font>
-              <br>
-              <a href="https://arxiv.org/pdf/2308.00122.pdf">Paper</a> / 
-              <a href="https://wikichao.github.io/data/projects/DAVIS/">Project Page</a> / <a href="https://github.com/WikiChao/DAVIS">Code</a>
-              <p>A new take on the audio-visual separation problem with the recent generative diffusion models.</p>
-            </td>
-          </tr>
-
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/OAVE.svg" alt="OAVE" width="210" height="120">
-            </td>
-            <td width="75%" valign="middle">
-                <a href="https://arxiv.org/abs/2410.07463"><papertitle>Language-Guided Joint Audio-Visual Editing Via One-Shot Adaptation</papertitle></a>
-              <br>
-              <a href="https://liangsusan-git.github.io/">Susan Liang</a>, <strong>Chao Huang</strong>, <a href="http://www.yapengtian.com/">Yapeng Tian</a>, <a href="https://anuragkr90.github.io/">Anurag Kumar</a>, <a href="https://www.cs.rochester.edu/~cxu22/">Chenliang Xu</a>
-              <br>
-              <em>ACCV</em>, 2024 
-              <br>
-              <a href="https://arxiv.org/pdf/2410.07463">Paper</a> / 
-              <a href="https://liangsusan-git.github.io/project/avedit/">Project Page</a> /
-              <a href="https://github.com/liangsusan-git/OAVE">Dataset</a>
-              <p>We achieve joint audio-visual editing under language guidance.</p>
-            </td>
-          </tr>
-
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="Acoustic-Primitives/data/speech.png" alt="acoustic-primitives" width="210" height="120">
-            </td>
-            <td width="75%" valign="middle">
-                <a href="/"><papertitle>Modeling and Driving Human Body Soundfields through Acoustic Primitives</papertitle></a>
-              <br>
-              <strong>Chao Huang</strong>, <a href="https://scholar.google.com/citations?hl=en&user=cyAYD3UAAAAJ&view_op=list_works&sortby=pubdate">Dejan Markovic</a>, <a href="https://www.cs.rochester.edu/~cxu22/">Chenliang Xu</a>, <a href="https://alexanderrichard.github.io/">Alexander Richard
-              </a>
-              <br>
-              <em>ECCV</em>, 2024
-              <br>
-              <a href="https://arxiv.org/pdf/2407.13083">Paper</a> / 
-              <a href="https://wikichao.github.io/Acoustic-Primitives/">Project Page</a>
-              <p>Thinking of the equivalent of 3D Gaussian Splatting and volumetric primitives for the human body soundfield? Here, we introduce Acoustic Primitives.</p>
-            </td>
-          </tr>
-
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/vidllm_survey.png" alt="vidllm" width="210" height="120">
-            </td>
-            <td width="75%" valign="middle">
-                <a href="https://arxiv.org/pdf/2312.17432v2.pdf"><papertitle>Video Understanding with Large Language Models: A Survey</papertitle></a>
-              <br>
-              Yunlong Tang*, ... , <b>Chao Huang</b>, ... , Ping Luo, Jiebo Luo, Chenliang Xu
-              <br>
-              <em>arXiv preprint</em>, 2023
-              <br>
-              <a href="https://arxiv.org/pdf/2312.17432v2.pdf">Paper</a> / 
-              <a href="https://github.com/yunlong10/Awesome-LLMs-for-Video-Understanding">Project Page</a>
-              <p>A survey on the recent Large Language Models for video understanding.</p>
-            </td>
-          </tr>
-
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/av_nerf.png" alt="av_nerf" width="210" height="120">
-            </td>
-            <td width="75%" valign="middle">
-                <a href="https://arxiv.org/abs/2302.02088"><papertitle>AV-NeRF: Learning Neural Fields for Real-World Audio-Visual Scene Synthesis</papertitle></a>
-              <br>
-              <a href="https://liangsusan-git.github.io/">Susan Liang</a>, <strong>Chao Huang</strong>, <a href="http://www.yapengtian.com/">Yapeng Tian</a>, <a href="https://anuragkr90.github.io/">Anurag Kumar</a>, <a href="https://www.cs.rochester.edu/~cxu22/">Chenliang Xu</a>
-              <br>
-              <em>NeurIPS</em>, 2023
-              <br>
-              <a href="https://arxiv.org/pdf/2302.02088.pdf">Paper</a> / 
-              <a href="https://liangsusan-git.github.io/project/avnerf/">Project Page</a> /
-              <a href="https://github.com/liangsusan-git/AV-NeRF/">Code</a>
-              <p>We propose a novel method of synthesizing real-world audio-visual scenes at novel positions and directions.</p>
-            </td>
-          </tr>
-
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/ego_av_loc.png" alt="ego_av_loc" width="210" height="120">
-            </td>
-            <td width="75%" valign="middle">
-                <a href="https://arxiv.org/abs/2303.13471"><papertitle>Egocentric Audio-Visual Object
-                  Localization</papertitle></a>
-              <br>
-              <strong>Chao Huang</strong>, <a href="http://www.yapengtian.com/">Yapeng Tian</a>, <a href="https://anuragkr90.github.io/">Anurag Kumar</a>, <a href="https://www.cs.rochester.edu/~cxu22/">Chenliang Xu</a>
-              <br>
-              <em>CVPR</em>, 2023
-              <br>              
-              <a href="https://arxiv.org/abs/2303.13471">Paper</a> / 
-              <a href="https://github.com/WikiChao/Ego-AV-Loc/">Code</a>
-              <p>We explore the problem of sound source visual localization in egocentric videos, propose a new localization method and establish a benchmark for evaluation.</p>
-              <!-- <a href="https://sightsound.org/papers/2022/Huang_Audio-Visual_Object_Localization_in_Egocentric_Videos.pdf"><papertitle>Audio-Visual Object Localization in Egocentric Videos</papertitle></a>
-                <br>
-                <em>CVPR Sight and Sound Workshop</em>, 2022 -->
-                <!-- <a href="https://sightsound.org/papers/2022/Huang_Audio-Visual_Object_Localization_in_Egocentric_Videos.pdf">Paper</a> -->
-            </td>
-          </tr>
+      .hero > .container {
+        position: relative;
+        z-index: 1;
+      }
+    .button-nav a {
+      margin: 0 0.5rem;
+      background: rgba(255,255,255,0.8);
+      border-radius: 8px;
+    }
+    .section-title {
+      color: #4a4a4a;
+      margin-bottom: 1rem;
+    }
+    .card-content p {
+      margin-bottom: 0.25rem;
+    }
+    .footer {
+      background-color: #fafafa;
+      padding: 2rem 1.5rem;
+      font-size: 0.9rem;
+    }
+    .round-avatar {
+      width: 125px;
+      height: 125px;
+      object-fit: cover;
+      border-radius: 8px;
+      display: block;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+      margin-left: calc(50% + 20px);
+      transform: translateX(0%);
+      box-shadow: 0 0 0 3px white, 0 0 6px rgba(0,0,0,0.1);
+    }
+    .round-avatar2 {
+        width: 125px;
+        height: 125px;
+        object-fit: cover;
+        border-radius: 8px;
+        display: block;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+        margin-left: calc(50%);
+        transform: translateX(-10%);
+        box-shadow: 0 0 0 3px white, 0 0 6px rgba(0,0,0,0.1);
+      }
+    .organizer-card {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      text-align: center;
+      padding: 1rem 0.5rem;
+    }
+    .organizer-card .card-content {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 0.75rem;
+    }
+    .card-image figure {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+    }
+    @media (max-width: 768px) {
+      .columns.is-multiline .column.is-one-eighth {
+        flex: 0 0 33.3333%;
+        max-width: 33.3333%;
+      }
+    }
+    @media (max-width: 480px) {
+      .columns.is-multiline .column.is-one-eighth {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+<!-- Header -->
+<section class="hero is-medium is-bold">
+<div class="container has-text-centered">
+<h1 class="title is-1">🔒 Trustworthy FMs Workshop</h1>
+<h2 class="subtitle is-3">From Classical Models to Foundation Models</h2>
+<p class="subtitle is-5">
+        📍 In conjunction with <strong>ICCV 2025</strong> — Oct. 19–23, Honolulu, Hawai'i
+      </p>
+<div class="button-nav mt-4">
+<a class="button is-primary" href="index.html">Overview</a>
+<a class="button is-primary" href="cfp.html">Call for Papers</a>
+<a class="button is-primary" href="speakers.html">Invited Speakers</a>
+<a class="button is-primary" href="organizers.html">Senior Organizers</a>
+<a class="button is-primary" href="pcmember.html">Organizers</a>
+</div>
+</div>
+</section>
+<!-- Overview -->
+<section class="section" id="overview">
+<div class="container">
+<h2 class="title section-title">🔎 Overview</h2>
+<div class="content">
+<p>
+          From <strong>AlexNet</strong> to <strong>LLaVA</strong>, everything changes—but the challenges of trustworthiness remain.
+          In the era of foundation models, new questions arise: 
+          <em>What does trustworthiness mean at scale?</em>
+<em>Can insights from classical deep learning still guide us?</em>
+</p>
+<p>
+          This workshop brings together researchers and practitioners to explore the <strong>latest developments</strong> in trustworthy foundation models. We aim to examine the <strong>intersection of classical methods and modern FMs</strong>, and foster open discussions on robustness, fairness, interpretability, and accountability.
+        </p>
+</div>
+</div>
+</section>
+<!-- Call for Papers -->
+<section class="section" id="cfp">
+<div class="container">
+<h2 class="title section-title">📣 Call for Papers</h2>
+<p>
+        We welcome <strong>short</strong> (4-page) and <strong>full-length</strong> (8-page) submissions on topics related to
+        <em>trustworthy foundation models</em> and their applications. 
+        <br/>Accepted papers will <strong>not</strong> be published in proceedings, allowing future resubmission.
+      </p>
+<br/>
+<p><strong>Topics of interest include (but are not limited to):</strong></p>
+<div class="content" style="margin-left: 1rem;">
+<ul>
+<li>🧠 Machine unlearning for foundation models</li>
+<li>🧭 Bias discovery and mitigation in large-scale foundation models</li>
+<li>🛡️ Adversarial attacks and defenses in foundation models</li>
+<li>📏 Robustness and generalization in trustworthy foundation models</li>
+<li>⚖️ Fairness-aware training and evaluation</li>
+<li>🔍 Explainability and interpretability for large/black-box models</li>
+<li>🧪 Ethical concerns and responsible deployment</li>
+<li>📊 Benchmarks for foundation model trustworthiness</li>
+<li>📉 Uncertainty quantification</li>
+<li>🔐 Data provenance and security</li>
+</ul>
+</div>
+<br/>
+<p><strong>🗓 Submission Deadline:</strong> August 1, 2025</p>
+<p><strong>📬 Notification:</strong> August 16, 2025</p>
+<p><strong>🔗 Submit via:</strong>
+<a href="https://zhangaipi.github.io/T2FM/#overview" target="_blank">
+          OpenReview
+        </a>
+</p>
+</div>
+</section>
+<!-- Speakers -->
+<section class="section" id="speakers">
+<div class="container">
+<h2 class="title section-title">Invited Speakers</h2>
+<!-- First row: 3 speakers -->
+<div class="columns is-centered">
+<div class="column is-one-third">
+<div class="card">
+<div class="card-content has-text-centered">
+<figure class="image is-128x128 is-inline-block">
+<img alt="Speaker 1" class="is-rounded" src="data/Salman_Avestimehr.jpg"/>
+</figure>
+<p class="title is-5 mt-3"><a href="https://www.avestimehr.com/" target="_blank">Salman Avestimehr</a></p>
+<p class="subtitle is-6">University of Southern California / FedML</p>
+</div>
+</div>
+</div>
+<div class="column is-one-third">
+<div class="card">
+<div class="card-content has-text-centered">
+<figure class="image is-128x128 is-inline-block">
+<img alt="Speaker 2" class="is-rounded" src="data/YaoQin.jpg"/>
+</figure>
+<p class="title is-5 mt-3"><a href="https://yaoqin1.github.io/" target="_blank">Yao Qin</a></p>
+<p class="subtitle is-6">UC Santa Barbara / DeepMind</p>
+</div>
+</div>
+</div>
+<div class="column is-one-third">
+<div class="card">
+<div class="card-content has-text-centered">
+<figure class="image is-128x128 is-inline-block">
+<img alt="Speaker 3" class="is-rounded" src="data/shaoron.jpg"/>
+</figure>
+<p class="title is-5 mt-3"><a href="https://pages.cs.wisc.edu/~sharonli/" target="_blank">Sharon Li</a></p>
+<p class="subtitle is-6">University of Wisconsin Madison</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Second row: 2 speakers -->
+<div class="columns is-centered">
+<div class="column is-one-third">
+<div class="card">
+<div class="card-content has-text-centered">
+<figure class="image is-128x128 is-inline-block">
+<img alt="Speaker 4" class="is-rounded" src="data/chengzhi.jpg"/>
+</figure>
+<p class="title is-5 mt-3"><a href="https://www.cs.columbia.edu/~mcz/" target="_blank">Chengzhi Mao</a></p>
+<p class="subtitle is-6">Google</p>
+</div>
+</div>
+</div>
+<div class="column is-one-third">
+<div class="card">
+<div class="card-content has-text-centered">
+<figure class="image is-128x128 is-inline-block">
+<img alt="Speaker 5" class="is-rounded" src="data/Mazda_Moayeri.jpeg"/>
+</figure>
+<p class="title is-5 mt-3"><a href="https://sites.google.com/umd.edu/mazdamoayeri" target="_blank">Mazda Moayeri</a></p>
+<p class="subtitle is-6">Meta</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
 
 
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/point_denoise.png" alt="point_denoise" width="210" height="120">
-            </td>
-            <td width="75%" valign="middle"><a href="https://arxiv.org/pdf/2003.06631"><papertitle>Non-Local Part-Aware Point Cloud Denoising</papertitle></a>
-                
-              <br>
-              <strong>Chao Huang*</strong>, <a href="https://liruihui.github.io/">Ruihui Li*</a>, <a href="https://nini-lxz.github.io/">Xianzhi Li</a>, <a href="https://www.cse.cuhk.edu.hk/~cwfu/">Chi-Wing Fu</a>
-              <br>
-              <em>arXiv preprint</em>, 2020
-              <!-- <br>
-              <a href="https://arxiv.org/pdf/2003.06631">Paper</a> -->
-              <p>A non-local attention based method for point cloud denoising in both synthetic and real scenes.</p>
-            </td>
-          </tr>
-
-
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/extreme_compression.png" alt="extreme_compression" width="210" height="120">
-            </td>
-            <td width="75%" valign="middle"><a href="https://arxiv.org/pdf/1904.03851.pdf"><papertitle>Extreme Image Compression via Multiscale Autoencoders With Generative Adversarial Optimization</papertitle></a>
-                
-              <br>
-              <strong>Chao Huang</strong>, <a href="https://scholar.google.com/citations?user=nYENH40AAAAJ&hl=zh-CN">Haojie Liu</a>, <a href="https://scholar.google.com/citations?user=HfBUtiIAAAAJ&hl=zh-CN">Tong Chen</a>, <a href="https://www.researchgate.net/profile/Qiu-Shen-3">Qiu Shen</a>, <a href="https://vision.nju.edu.cn/fc/d3/c29470a457939/page.htm">Zhan Ma</a>
-              <br>
-              <em>IEEE Visual Communications and Image Processing (VCIP)</em>, 2019 &nbsp <font color="#ff6a5c"><strong>(Oral Presentation)</strong></font>
-              <!-- <br>
-              <a href="https://arxiv.org/pdf/1904.03851.pdf">Paper</a> -->
-              <p>An image compression system under extreme condition, <em>e.g.,</em> < 0.05 bits per pixel (bpp). </p>
-            </td>
-          </tr>
-
-        </tbody></table>
-
-				
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
-          <tr>
-            <td>
-              <heading>Education</heading>
-            </td>
-          </tr>
-        </tbody></table>
-        <table width="100%" align="center" border="0" cellpadding="20"><tbody>
-					
-          <tr>
-            <td style="text-align: center;padding:20px;width:25%;vertical-align:middle"><img src="images/uofr-logo-shield.png" width="120" ></td>
-            <td width="75%" valign="center">
-              <strong>University of Rochester</strong>, NY, USA
-              <br>
-              Ph.D. in Computer Science
-              <br>
-              Jan. 2021 - Present
-              <br> 
-              Advisor: <a href="https://www.cs.rochester.edu/~cxu22/p/index.html">Chenliang Xu</a>
-            </td>
-          </tr>
-          <tr>
-            <td style="text-align: center;padding:20px;width:25%;vertical-align:middle"><img src="images/NJU_logo.jpg"  width="100"></td>
-            <td width="75%" valign="center">
-              <strong>Nanjing University</strong>, Nanjing, China
-              <br>
-              B.Eng in Electronic Science and Engineering
-              <br>
-              Sept. 2015 - Jun. 2019
-            </td>
-          </tr>
-        </tbody></table>
-        
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
-          <tr>
-            <td>
-              <heading>Experience</heading>
-            </td>
-          </tr>
-        </tbody></table>
-        <table width="100%" align="center" border="0" cellpadding="20"><tbody>
-          <tr>
-            <td style="text-align: center;padding:20px;width:25%;vertical-align:middle"><img src="images/Reality_Labs_logo.png" width="120" ></td>
-            <td width="75%" valign="center">
-              <strong>Meta Reality Labs Research, Meta</strong>, Cambridge, UK
-              <br>
-              Research Scientist Intern
-              <br>
-              May. 2024 - Aug. 2024
-              <br> 
-              Mentor: <a href="https://sanjeelparekh.github.io/">Sanjeel Parekh
-              </a>, <a href="https://ruohangao.github.io/">Ruohan Gao</a>, <a href="https://anuragkr90.github.io/">Anurag Kumar</a>
-            </td>
-          </tr>
-
-          <tr>
-            <td style="text-align: center;padding:20px;width:25%;vertical-align:middle"><img src="images/Reality_Labs_logo.png" width="120" ></td>
-            <td width="75%" valign="center">
-              <strong>Codec Avatars Lab, Meta</strong>, Pittsburgh
-              <br>
-              Research Scientist Intern
-              <br>
-              May. 2023 - Nov. 2023
-              <br> 
-              Mentor: <a href="https://scholar.google.com/citations?hl=en&user=cyAYD3UAAAAJ&view_op=list_works&sortby=pubdate">Dejan Markovic
-              </a>, <a href="https://alexanderrichard.github.io/">Alexander Richard
-              </a>
-            </td>
-          </tr>
-          
-
-          <tr>
-            <td style="text-align: center;padding:20px;width:25%;vertical-align:middle"><img src="images/CUHK_logo.png" width="120" ></td>
-            <td width="75%" valign="center">
-              <strong>The Chinese University of Hong Kong</strong>, Shatin, Hong Kong
-              <br>
-              Research Assistant
-              <br>
-              Jul. 2019 - Dec. 2020
-              <br> 
-              Advisor: <a href="http://www.cse.cuhk.edu.hk/~cwfu/">Chi-Wing Fu</a>
-            </td>
-          </tr>
-        </tbody></table>
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:0px;text-align: center;">
-              <br>
-              <p style="text-align:center;font: size 10px;;">
-                The template is based on <a href="http://jonbarron.info/">Jon Barron</a>'s website.
-              </p>
-              <a href='https://clustrmaps.com/site/1aokh'  title='Visit tracker'><img src='https://clustrmaps.com/map_v2.png?cl=475b9e&w=340&t=tt&d=1Hy1olEvEwHbSO1bS0j16i-wjqkfkVfzM6ADMGK3X7k&co=ffffff&ct=ba2b2b'/></a>
-            </td>
-          </tr>
-        </tbody></table>
-      </td>
-    </tr>
-  </table>
+<!-- Footer -->
+<footer class="footer">
+<div class="content has-text-centered">
+<p>
+        Contact: <a href="mailto:t2fm_workshop@googlegroups.com">t2fm_workshop@googlegroups.com</a><br/>
+        Website template adapted from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a><br/>
+        Licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
+</p>
+</div>
+</footer>
 </body>
-
 </html>
